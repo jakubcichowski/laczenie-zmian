@@ -4,6 +4,8 @@ points = 0
 
 def sucess():
     print("To dobra!!!! odpowiedź, brawo! Masz ju punktów.")
+def wrong_answer():
+    print("Zla odpowiedz")
 
 def show_question(question):
     global points
@@ -22,7 +24,7 @@ def show_question(question):
         points += 1
         sucess
     else:
-        print("Zła odpowiedź!!, prawidłowa odpowiedź to " + question["prawidlowa_odpowiedz"] + ".")
+        wrong_answer()
 
 
 with open("quiz.json", encoding="utf-8") as json_file:
