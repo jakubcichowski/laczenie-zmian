@@ -35,3 +35,4 @@ with open("quiz.json", encoding="utf-8") as json_file:
 
 print()
 print("KONIEC GRY")
+print("nara")
