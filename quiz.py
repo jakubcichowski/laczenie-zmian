@@ -22,7 +22,7 @@ def show_question(question):
         points += 1
         sucess
     else:
-        print("Niestety to zła odpowiedź, prawidłowa odpowiedź to " + question["prawidlowa_odpowiedz"] + ".")
+        print("Zła odpowiedź!!, prawidłowa odpowiedź to " + question["prawidlowa_odpowiedz"] + ".")
 
 
 with open("quiz.json", encoding="utf-8") as json_file:
