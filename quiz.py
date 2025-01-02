@@ -2,6 +2,9 @@ import json
 
 points = 0
 
+def sucess():
+    print("To dobra!!!! odpowiedź, brawo! Masz ju punktów.")
+
 def show_question(question):
     global points
 
@@ -17,7 +20,7 @@ def show_question(question):
 
     if answer == question["prawidlowa_odpowiedz"]:
         points += 1
-        print("To dobra!!!! odpowiedź, brawo! Masz już", points, "punktów.")
+        sucess
     else:
         print("Niestety to zła odpowiedź, prawidłowa odpowiedź to " + question["prawidlowa_odpowiedz"] + ".")
 
