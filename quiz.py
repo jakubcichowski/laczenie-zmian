@@ -34,4 +34,4 @@ with open("quiz.json", encoding="utf-8") as json_file:
         show_question(questions[i])
 
 print()
-print("To koniec gry, zdobyta liczba punktów to " + str(points) + ".")
+print("KONIEC GRY")
